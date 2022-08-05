@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 900px;
+    box-shadow: 0px 35px 55px #003147;
+    display: grid;
+    grid-template-columns: 300px 600px;
+}
+
+.left-section {
+    grid-column: span 1;
+    background-color: #003147;
+    padding: 1rem;
+    color: white;
+}
+
+.right-section {
+    grid-column: span 1 / span 2;
+    background-color: lightskyblue;
+    padding: 1rem;
+}
+
+.profile-image {
+    display: block;
+    align-items: center;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 60%;
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+
+.designation {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0rem;
+}
+
+.description {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.projects {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    padding: 0.90rem;
+}
+
+.skills {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2rem 0.5rem 1rem 0.5rem;
+}
+
+.skill-name {
+    font-size: 0.75rem;
+    font-weight: 0.55rem;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.progress-bar {
+
+    height: 7px;
+    background-color: lightskyblue;
+}
+
+.language {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3rem 0.5rem 1rem 0.5rem;
+}
+
+.lang-name {
+    font-size: 0.75rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.right-main-content {
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+.right-title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1rem;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width:630px) {
+    .main-content {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px;
+    }
+
+}
+
+
+@media screen and (max-width:673px) {
+    .main-content {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px;
+    }
+
+
+}
